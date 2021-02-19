@@ -1,0 +1,12 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #58585a;
+    color: #fafafb;
+}
+.title h1{
+    margin-left: 54px;
+}

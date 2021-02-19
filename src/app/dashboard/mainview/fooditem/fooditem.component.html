@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="image">
+        <img src="{{imgURL}}" alt="{{fooditem.title}}">
+    </div>
+    <div #footer class="footer">
+        <div class="fooditem-title">
+            <div class="title">
+                <h3>{{fooditem.title}}</h3>
+            </div>
+            <div (click)='expand(footer)' class="arrow">
+            </div>
+        </div>
+        <div *ngIf='expanded' class="fooditem-description">
+            {{fooditem.description}}
+        </div>
+        <button routerLink='/fooddetails/{{id}}' *ngIf='expanded' class="btn">Φτιαξε τη συνταγη</button>
+    </div>
+</div>

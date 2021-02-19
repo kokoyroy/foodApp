@@ -1,0 +1,85 @@
+.container {
+    background-color: #ffffff;
+    width: 317px;
+    /* height: 245px; */
+    border-radius: 13px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    object-position: center;
+    border-radius: 13px 13px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(245px - 185px);
+    width: 100%;
+    transition: all .2s ease;
+}
+.footer .arrow {
+    margin-right: 21px;
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../../assets/images/arrow_right.png);
+}
+.footer h3 {
+    margin-left: 25px;
+    font-weight: 500;
+}
+.footerexpand {
+    padding-top: 10px;
+    height: calc(290px - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transition: all .2s ease;
+
+}
+.fooditem-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerexpand .arrow {
+    margin-right: 21px;
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../../assets/images/arrow_down.png);
+}
+.fooditem-title h3 {
+    margin-left: 25px;
+    font-weight: 500;
+
+}
+.fooditem-description {
+    height: 140px;
+    width: 80%;
+    padding-top: 20px;
+}
+.footerexpand .btn {
+    /* align-self: flex-end; */
+    width: 272px;
+    height: 50px;
+    color: white;
+    background-color: teal;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}

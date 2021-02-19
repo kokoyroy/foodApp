@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    border-bottom: 1px solid black;
+    /* border-right: 1px solid black; */
+}
+.logo img {
+    width: 120px;
+    display: block;
+}
+.link{
+   height: 65px; 
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid black;
+   cursor: pointer;
+   font-weight: 500;
+
+}
+.active{
+    background-color: #1db899;
+    color: white;
+}

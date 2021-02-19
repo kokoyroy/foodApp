@@ -1,0 +1,5 @@
+<div class="logo">
+    <img src="../../../assets/images/logo.png" alt="smartapp">
+</div>
+
+<div *ngFor='let el of menu' class="link" routerLinkActive='active' routerLink='{{el.id}}'>{{el.title}}</div>

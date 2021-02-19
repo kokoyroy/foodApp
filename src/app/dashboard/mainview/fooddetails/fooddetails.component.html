@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 *ngIf='!loaded'>Loading...</h1>
+    <div *ngIf='loaded' class="main">
+        <div class="left">
+            <div class="image">
+                <img src="{{fooditem.imageUrl}}" alt="{{fooditem.title}}" srcset="">
+            </div>
+            <h3>{{fooditem.title}}</h3>
+            <p>{{fooditem.description}}</p>
+            <div class="links">
+                <a href="{{fooditem.websiteUrl}}"><img style="width: 60px;" src="../../../../assets/images/website.png" alt=""></a>
+                <a href="{{fooditem.youtubeUrl}}"><img style="width: 60px;" src="../../../../assets/images/youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Υλικά</h2>
+            <ul>
+                <li *ngFor='let el of fooditem.ingredients'>{{el}}</li>
+            </ul>
+            <h2>Οδηγίες εκτέλεσης</h2>
+            <ul>
+                <li *ngFor='let el of fooditem.instructions'>{{el}}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
